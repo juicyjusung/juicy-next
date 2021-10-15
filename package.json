@@ -15,7 +15,7 @@
         "test": "jest -c test/jest.config.js",
         "cypress:open": "cypress open",
         "cypress:run": "cypress run --config video=false",
-        "cypress:test": "start-server-and-test start http://localhost:3000 cypress:run"
+        "cypress:test": "next build && start-server-and-test start http://localhost:3000 cypress:run"
     },
     "dependencies": {
         "@emotion/css": "^11.1.3",
